@@ -5,7 +5,7 @@ import sys
 import unittest
 from test_configuration import TestConfiguration
 
-class LitgridTestSuite(unittest.TestSuite):
+class BotTestSuite(unittest.TestSuite):
 	def add(self, test_case):
 		tests = unittest.defaultTestLoader.loadTestsFromTestCase(test_case)
 		self.addTests(tests)

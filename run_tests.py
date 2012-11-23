@@ -11,8 +11,8 @@ if len(relativePath) > 0:
 sys.path.insert(0, relativePath + "src")
 sys.path.insert(0, relativePath + "tests")
 
-from test_suite import LitgridTestSuite
+from test_suite import BotTestSuite
 
-litgrid_suite = LitgridTestSuite()
+bot_suite = BotTestSuite()
 runner = unittest.TextTestRunner()
-runner.run(litgrid_suite.suite())
+runner.run(bot_suite.suite())
